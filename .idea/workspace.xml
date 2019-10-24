@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80080c98-4a67-4d28-9b7d-24f22aae9f95" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Pagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PropertieCard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PropertieSlide.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/MenuAppBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/PropertieDetails.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/PropertiesPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/actionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PropertieCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PropertieCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PropertieList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PropertieList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/PropertiesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/PropertiesPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/propertiesReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/propertiesReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,8 +85,16 @@
       <workItem from="1571847034366" duration="613000" />
       <workItem from="1571848473666" duration="16516000" />
       <workItem from="1571878819071" duration="739000" />
-      <workItem from="1571879581146" duration="18156000" />
+      <workItem from="1571879581146" duration="19106000" />
     </task>
+    <task id="LOCAL-00001" summary="Final commit.">
+      <created>1571898033592</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571898033592</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,5 +112,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Final commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Final commit." />
   </component>
 </project>
