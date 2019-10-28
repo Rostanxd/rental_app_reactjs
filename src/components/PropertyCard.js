@@ -12,7 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import {grey} from "@material-ui/core/colors";
 import {useHistory} from "react-router-dom";
-import './PropertieCard.css'
+import './PropertyCard.css'
 
 const useStyles = makeStyles({
   card: {},
@@ -41,16 +41,16 @@ const useStyles = makeStyles({
   }
 });
 
-export default function PropertieCard(props) {
+export default function PropertyCard(props) {
   const classes = useStyles();
   const imageArrUrl = props.imageArrUrl;
-  const selectPropertie = props.selectPropertie;
+  const selectProperty = props.selectProperty;
   
   let history = useHistory();
   
   function handleClick(data) {
     history.push("/details");
-    selectPropertie(data);
+    selectProperty(data);
   }
   
   return (
@@ -66,7 +66,7 @@ export default function PropertieCard(props) {
                 gutterBottom
                 variant="h5"
                 component="h3">
-              {props.title > 0 ? formatter.format(props.title) : 'N/A'}
+              {props.title > 0 ? props.title : 'N/A'}
             </Typography>
             <Typography
                 style={{marginLeft: '10px', marginBottom: '10px'}}
@@ -86,7 +86,7 @@ export default function PropertieCard(props) {
                     <TableCell className={classes.tableCell}>
                       <h5>Monthly Rent</h5>
                       <p>{props.monthlyRent > 0 ?
-                          formatter.format(props.monthlyRent) :
+                          props.monthlyRent :
                           'N/A'
                       }</p>
                     </TableCell>
@@ -95,7 +95,7 @@ export default function PropertieCard(props) {
                     <TableCell className={classes.tableCell}>
                       <h5>Gross Yield</h5>
                       <p>{props.grossYield > 0 ?
-                          roundToTwo(props.grossYield).toString() + '%' :
+                          props.grossYield + '%' :
                           'N/A'
                       }</p>
                     </TableCell>
@@ -108,13 +108,3 @@ export default function PropertieCard(props) {
       </Card>
   );
 }
-
-/*  MATH FUNCTIONS */
-function roundToTwo(num) {
-  return +(Math.round(num + "e+2") + "e-2");
-}
-
-var formatter = new Intl.NumberFormat('en-US', {
-  style: 'currency',
-  currency: 'USD',
-});

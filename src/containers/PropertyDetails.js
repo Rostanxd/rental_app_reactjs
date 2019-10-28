@@ -1,16 +1,15 @@
 import React, {Component} from 'react';
-import PropertieSlide from "../components/PropertieSlide";
+import PropertySlide from "../components/PropertySlide";
 import {connect} from "react-redux";
 
-class PropertieDetails extends Component {
+class PropertyDetails extends Component {
   
   render() {
     const {propertiesState} = this.props;
-    const {currentPropertie} = propertiesState;
-    console.log(propertiesState);
+    const {currentProperty} = propertiesState;
     return (
         <div>
-          <PropertieSlide currentPropertie={currentPropertie}/>
+          <PropertySlide currentProperty={currentProperty}/>
         </div>
     );
   }
@@ -29,4 +28,4 @@ const mapDispatchToProps = (dispatch) => {
   return {}
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(PropertieDetails)
+export default connect(mapStateToProps, mapDispatchToProps)(PropertyDetails)

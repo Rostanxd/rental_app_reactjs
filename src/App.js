@@ -5,7 +5,7 @@ import {Router, Route} from 'react-router-dom';
 import {createBrowserHistory} from "history";
 
 import PropertiesPage from './containers/PropertiesPage'
-import PropertieDetails from './containers/PropertieDetails'
+import PropertyDetails from './containers/PropertyDetails'
 
 //  REDUX CONFIGURATION
 import reducers from './reducers/index.js';
@@ -32,7 +32,7 @@ function App() {
         <MenuAppBar/>
         <Router history={historial}>
           <Route exact path="/" component={PropertiesPage}/>
-          <Route exact path="/details" component={PropertieDetails}/>
+          <Route exact path="/details" component={PropertyDetails}/>
         </Router>
       </ReduxProvider>
   );

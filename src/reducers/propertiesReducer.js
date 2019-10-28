@@ -2,16 +2,18 @@ import {
     PROPERTIES_READ,
     PROPERTIES_READ_SUCCESS,
     PROPERTIES_READ_ERR,
-    SELECT_PROPERTIE,
+    SELECT_PROPERTY,
+    SET_PROPERTIES_VIEW_MODE,
     SET_CURRENT_PAGE,
-    SET_PROPERTIES_PER_PAGE
+    SET_PROPERTIES_PER_PAGE,
 } from '../actions/actionTypes';
 
 const defaultState = {
     properties: [],
-    currentPropertie: {},
+    currentProperty: {},
     fetchingList: false,
     errorList: false,
+    viewModeGrid: true,
     currentPage: 1,
     propertiesPerPage: 6
 };
@@ -37,10 +39,15 @@ const propertiesReducer = (state = defaultState, action) => {
               fetchingList: false,
               errorList: true,
             };
-        case SELECT_PROPERTIE:
+        case SELECT_PROPERTY:
             return{
                 ...state,
-                currentPropertie: action.payload,
+                currentProperty: action.payload,
+            };
+        case SET_PROPERTIES_VIEW_MODE:
+            return{
+                ...state,
+                viewModeGrid: action.payload,
             };
         case SET_CURRENT_PAGE:
             return{
