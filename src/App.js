@@ -32,7 +32,7 @@ function App() {
         <MenuAppBar/>
         <Router history={historial}>
           <Route exact path="/" component={PropertiesPage}/>
-          <Route exact path="/details" component={PropertyDetails}/>
+          <Route exact path="/details/:handle" component={PropertyDetails}/>
         </Router>
       </ReduxProvider>
   );

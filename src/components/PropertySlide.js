@@ -3,8 +3,8 @@ import {Gallery, GalleryImage} from "react-gesture-gallery";
 
 export default function PropertySlide(props) {
   const [index, setIndex] = React.useState(0);
-  const title = props.currentProperty.title;
-  const images = props.currentProperty.imageArrUrl;
+  const title = props.title;
+  const images = props.imageArrUrl;
   
   React.useEffect(() => {
     const timer = setInterval(() => {

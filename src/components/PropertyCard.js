@@ -11,7 +11,6 @@ import TableRow from '@material-ui/core/TableRow';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import {grey} from "@material-ui/core/colors";
-import {useHistory} from "react-router-dom";
 import './PropertyCard.css'
 
 const useStyles = makeStyles({
@@ -43,18 +42,9 @@ const useStyles = makeStyles({
 
 export default function PropertyCard(props) {
   const classes = useStyles();
-  const imageArrUrl = props.imageArrUrl;
-  const selectProperty = props.selectProperty;
-  
-  let history = useHistory();
-  
-  function handleClick(data) {
-    history.push("/details");
-    selectProperty(data);
-  }
   
   return (
-      <Card className='card' onClick={() => handleClick({title: props.subtitle, imageArrUrl: imageArrUrl})}>
+      <Card className='card'>
         <CardActionArea>
           <CardMedia
               className={classes.media}
